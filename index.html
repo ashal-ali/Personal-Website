@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashal's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <h1>Hello, I am <span>Ashal</span>!</h1>
+                <p>B.S. Data Science (Math and CS Track)<br>Stanford Class of 2026</p>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!----------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Placeholder.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> My name is Ashal and I am from Karachi, Pakistan. I am currently pursuing a B.S. in Data Science (Math and CS Track) as a Junior at Stanford University.
+                        I am curious about how non-obvious sources of data can contribute towards uncovering unique ways of viewing the world. Currently, I am most
+                        fascinated by the speed with which artificial intelligence is becoming more capable of human tasks. Through out my undergraduate degree, I have spent
+                        a great chunk of my free time researching artificial intelligence to try and build expert knowledge in the field. Over my research and internship experiences,
+                        I have worked with a vast variety of data types and tackled with real-world data problems. I have also developed an interest in communicating my insights as a story
+                        easily communicable to people of all types of technical proficiency.
+                        In my free time, I mentor students as a Project Leader part of the Stanford Data Science and Mapping for Society Club and play polo as a horse-loving member of the Stanford Polo Club.
+                        Traversing through Wikipedia rabbit holes, I love working on side projects as an aspiring entrepreneur. Please feel free to reach me at <span style="color: white">ashal@stanford.edu</span>. My <a href="https://github.com/ashal-ali" target="_blank" style="color: white; text-decoration: none;">GitHub</a> 
+                        and <a href="https://www.linkedin.com/in/syed-ashal-ali-bb8383247/" target="_blank" style="color: white; text-decoration: none;">LinkedIn</a> are also linked here.<br><br>
+                        Welcome to my website!
+                      </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('workexperience')">Work Experience</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <p><span>Stanford University (Sep 2022 - Jun 2026)</span></p>
+                        <p><span class="bolded">B.S. Data Science (Math and CS Track)</span><br>
+                        Relevant Coursework: Data Structures and Algorithms, Systems, Linear Algebra,
+                        Multivariable Calculus, Differential Equations, Statistics, Data Analysis</p>
+                    </div>
+                    <div class="tab-contents" id="workexperience">
+                        <ul>
+                            <li><span>Stanford AI Lab (SAIL), Dr. Fei-Fei Li</span><br>
+                                <ul>
+                                    <li><span class="bolded">Artificial Intelligence Research Intern  <br>Sep 2023 - Jun 2024</span></li>
+                                    <li class="experience">Spearheaded the development of a robust data quality control pipeline for "EchoGPT,"
+                                        a Vision Language Model (VLM) that translates echocardiograms into summaries for doctors,
+                                        boosting anomaly detection accuracy from 79% to 84%.</li>
+                                    <li class="experience">Repurposed “Frozen in Time” encoder architecture using PyTorch to enable image
+                                        & video simultaneous inputs for VLM.</li>
+                                </ul>
+                            </li>
+                            <li><span>Green Canvas (Stealth Hedge Fund)</span><br>
+                                <ul>
+                                    <li><span class="bolded">Quantitative Research Intern  <br>Jun 2024 - Sep 2024</span></li>
+                                    <li class="experience">Applying machine learning & stock technical analysis to optimize trading strategies
+                                        achieving a 9% increase in returns.</li>
+                                    <li class="experience">Building new trading approaches by conducting signal research
+                                        (time-series, regression, & tree-based methods).</li>
+                                </ul>
+                            </li>
+                            <li><span>Department of Statistics, Dr. Giulio De Leo</span><br>
+                                <ul>
+                                    <li><span class="bolded">Machine Learning Research Intern <br>Feb 2024 - Sep 2024</span></li>
+                                    <li class="experience">Formulated seasonal indicators of schistosomiasis in West Africa using probabilistic
+                                        models & ensemble methods coded in R, advancing early detection accuracy
+                                        by reducing error by 6%.</li>
+                                    <li class="experience">Parsed high-dimensional datasets using SQL & Pandas to incorporate
+                                        different perspectives into data narratives. </li>
+                                </ul>
+                            </li>
+                            <li><span>Department of Material Science, Dr. Sarah Heilshorn</span><br>
+                                <ul>
+                                    <li><span class="bolded">Bioengineering Research Intern <br> Dec 2022 - Dec 2023</span></li>
+                                    <li class="experience">Engineered post-imaging artefact cleaning & data collection pipelines using
+                                        MATLAB, ImageJ, & Python. </li>
+                                    <li class="experience">Performed surgery on rat cadavers, analyzed behavior data, & presented findings
+                                        in research symposium with 100+ attendees.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Citadel Invitational Datathon</span><br>
+                                <ul>
+                                    <li><span class="bolded">3rd Place Winner  <br>Apr 2024 - Apr 2024</span></li>
+                                    <li class="experience">Analyzed investment signals using prediction market data & financial indicators
+                                        earning 3rd place among 40+ teams.</li>
+                                    <li class="experience">Conducted time series analysis & statistical testing on oil futures data to
+                                        propose a strategic hedging approach.</li>
+                                </ul>
+                            </li>
+                            <li><span>Podil (Health and Wellness Startup)</span><br>
+                                <ul>
+                                    <li><span class="bolded">Data Analyst<br>Aug 2023 - Jan 2024</span></li>
+                                    <li class="experience">Designed data mining algorithms to select 300+ recipes,
+                                         leading to a 14% improvement in user-product interaction.</li>
+                                    <li class="experience">Integrated user behavior research
+                                         into recommender feature to provide 7000+ clients with personalized meal plans.</li>
+                                </ul>
+                            </li>
+                            <li><span>Enigma Chat</span><br>
+                                <ul>
+                                    <li><span class="bolded">Project Developer <br>Dec 2023 - Present</span></li>
+                                    <li class="experience">Creating a user-friendly chat app using Enigma’s
+                                         algorithms for secure messaging using FastAPI, Node.js, & React.</li>
+                                    <li class="experience">Launched marketing campaign with flyers, interest forms, & email blasts
+                                         to compile a waiting list of 200+ users.</li>
+                                </ul>
+                            </li>
+                            <li><span>Affiliated with Tiger Global</span><br>
+                                <ul>
+                                    <li><span class="bolded">Quantitative Developer<br> May 2024 - Sep 2024</span></li>
+                                    <li class="experience">Developed a tool for analyzing 13F filings & optimizing portfolio weighting using MySQL & Python. </li>
+                                    <li class="experience">Investigating signals for currency investment horizons by evaluating economic calendar features & non-currency events. </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>2021 - Present</span><br>Python, C++, SQL, Tableau</li>
+                            <li><span>2022 - Present</span><br>Machine Learning, Deep Learning, TensorFlow, PyTorch</li>
+                            <li><span>2023 - Present</span><br>HTML, CSS, React, Node.js, C</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
